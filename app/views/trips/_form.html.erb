@@ -10,8 +10,13 @@
       </ul>
     </div>
   <% end %>
+  <div class="flex flex-col">
+    <%= form.label :purpose %>
+    <%= form.rich_text_area :purpose %>
+  </div>
 
-  <div class="actions">
-    <%= form.submit %>
+
+  <div class="actions mt-4">
+    <%= form.submit class: "px-2 py-1 bg-indigo-500 bg-opacity-75 text-indigo-50 rounded cursor-pointer" %>
   </div>
 <% end %>

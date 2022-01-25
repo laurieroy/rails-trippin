@@ -8,5 +8,8 @@
         <%= render "place", place: place %>
       <% end %>
     </turbo-frame>
-    <%= link_to 'Add a new place', new_place_path, class: "px-2 py-1 bg-pink-400 bg-opacity-75 mt-4 rounded-full text-gray-50 mr-auto" %>
+    <%= link_to 'Add a new place', new_place_path, 
+      class: "px-2 py-1 mt-4 bg-pink-400 bg-opacity-75 rounded-full text-gray-50 mr-auto",
+      data: { turbo_frame: "modal" }
+    %>
   </div>

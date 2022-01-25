@@ -13,6 +13,7 @@ class TripsController < ApplicationController
   # GET /trips/new
   def new
     @trip = Trip.new
+    @places = Place.all.collect { |p| [p.name, p.id]}
   end
 
   # GET /trips/1/edit

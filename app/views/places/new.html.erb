@@ -1,5 +1,10 @@
-<h1>New Place</h1>
-
-<%= render 'form', place: @place %>
-
-<%= link_to 'Back', places_path %>
+<div class="h-screen w-full">
+	<h1 class="text-4xl my-4 text-gray-50">Create a new place</h1>
+	<div class="w-full mt-8 rounded-lg p-4 bg-gray-50">
+		<%= render 'form', place: @place %>
+			<div class="mt-2">
+				<%= link_to 'Cancel', places_path %>
+			</div>
+	</div>
+</div>
+	

@@ -1,29 +1,10 @@
-<p id="notice"><%= notice %></p>
+<div class="h-screen w-full flex flex-col tw-gray-100">
+  <p id="notice"><%= notice %></p>
 
-<h1>Places</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Zip</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @places.each do |place| %>
-      <tr>
-        <td><%= place.name %></td>
-        <td><%= place.zip %></td>
-        <td><%= link_to 'Show', place %></td>
-        <td><%= link_to 'Edit', edit_place_path(place) %></td>
-        <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Place', new_place_path %>
+  <h1 class="text-4xl text-gray-50 font-semibold my-4">All Places</h1>
+    <div class="grid grid-cols-2 gap-8">
+      <% @places.each do |place| %>
+        <%= render "place", place: place %>
+      <% end %>
+    </div>
+    <%= link_to 'Add a new place', new_place_path, class: "px-2 py-1 bg-pink-400 bg-opacity-75 mt-4 rounded-full text-gray-50 mr-auto" %>

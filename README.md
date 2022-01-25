@@ -1,24 +1,12 @@
-# README
+# Trippin - A travel planning site -WIP
+[demo]()
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This site has a list of places (name, photo, zip code) that can be selected to make up a trip (name).
 
-Things you may want to cover:
+It uses hotwire and stimulus to update and edit the places. 
 
-* Ruby version
+- Ruby(3.0) on Rails(6.1)
+- CSS: Tailwind2	(I had huge issues getting this to work, was eventually saved by [web-crunch](https://www.youtube.com/watch?v=Q1aTo2I6Dxc))
+- DB: postgres 13
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The original idea was from Enoch who has the start of a great [tutorial](https://www.youtube.com/watch?v=Y0dyLQkMtm4&t=3328s&ab_channel=Enoch) series. My plan is to build it up similar to my jaunts project.

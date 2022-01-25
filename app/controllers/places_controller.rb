@@ -17,6 +17,7 @@ class PlacesController < ApplicationController
 
   # GET /places/1/edit
   def edit
+    
   end
 
   # POST /places or /places.json
@@ -40,6 +41,7 @@ class PlacesController < ApplicationController
       if @place.update(place_params)
         format.html { redirect_to place_url(@place), notice: "Place was successfully updated." }
         format.json { render :show, status: :ok, location: @place }
+        format.turbo_stream {}
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @place.errors, status: :unprocessable_entity }

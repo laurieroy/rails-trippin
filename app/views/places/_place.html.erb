@@ -1,7 +1,10 @@
-<div class="h-96 w-full flex flex-col group bg-gray-200 items-center justify-center relative">
+<a href="<%= edit_place_path(place) %>" 
+	class="h-96 w-full flex flex-col group bg-gray-200 items-center justify-center relative" 
+	data-turbo-frame="modal"
+>
 	<%= image_tag place.image, class: "h-96 w-full object-cover" if  place.image.attached? %>
 	<div class="w-3/4 mx-auto py-2 group-hover:bg-gray-800 flex justify-center transition duration-300 absolute">
 		<h3 class="text-4xl text-gray-800 group-hover:text-gray-50 transition duration-300"><%= place.name %></h3>
 	</div>
-</div>
+</a>
 

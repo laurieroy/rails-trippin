@@ -1,9 +1,11 @@
 # Trippin - A travel planning site -WIP
-[demo]()
+<!-- [demo]() -->
 
-This site has a list of places (name, photo, zip code) that can be selected to make up a trip (name).
+This site has a list of places (name, photo, zip code) that can be selected to make up a trip (name) - join table between distinations and places. I also plan to add in activities as a category filter.
 
 It uses hotwire and stimulus to update and edit the places. 
+
+Not a priority so a occasional WIP.
 
 - Ruby(3.0) on Rails(6.1)
 - CSS: Tailwind2	(I had huge issues getting this to work, was eventually saved by [web-crunch](https://www.youtube.com/watch?v=Q1aTo2I6Dxc))
